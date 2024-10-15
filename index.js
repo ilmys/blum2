@@ -228,7 +228,7 @@ const handleDefaultFlow = async (token) => {
           console.log('⌛ Please wait for 1 minute to play the game...'.yellow);
           await delay(60000);
 
-          const randPoints = Math.floor(Math.random() * (240 - 160 + 1)) + 160;
+          const randPoints = Math.floor(Math.random() * (240 - 200 + 1)) + 200;
           const letsPlay = await claimGamePoints(
             token,
             gameData.gameId,
@@ -349,7 +349,7 @@ const handleOneTimeFlow = async (token) => {
         console.log('⌛ Please wait for 1 minute to play the game...'.yellow);
         await delay(60000);
 
-        const randPoints = Math.floor(Math.random() * (240 - 160 + 1)) + 160;
+        const randPoints = Math.floor(Math.random() * (240 - 200 + 1)) + 200;
         const letsPlay = await claimGamePoints(
           token,
           gameData.gameId,
@@ -429,7 +429,7 @@ const runScript = async () => {
   } else {
     console.error('🚨 Tribe not found!'.red);
     console.log(
-      `Join HCA Tribe here: https://t.me/HappyCuanAirdrop/19694\n`.blue
+      `Join my Tribe signalrektcrypto \n`.blue
     );
   }
 

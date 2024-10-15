@@ -6,7 +6,7 @@ async function getToken() {
     method: 'POST',
     data: {
       query: process.env.SESSION_KEY,
-      referralToken: 'vTHusRz4j0', // changeable
+      referralToken: '', // changeable
     },
   });
 

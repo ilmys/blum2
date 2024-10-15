@@ -5,5 +5,5 @@ $ pkg install git<br>
 $ pkg install nodejs<br>
 $ npm i <br>
 $ nano .env <br>
-SESSION_KEY=user=xxxxxxxx
+SESSION_KEY=user=xxxxxxxx <br>
 $ npm start <br>

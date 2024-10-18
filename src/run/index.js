@@ -143,14 +143,8 @@ const run = async (user, index) => {
   }
 };
 
-console.log(
-  colors.green.bold(
-`┳┓┓ ┳┳┳┳┓  ┳┓┏┓┏┳┓
- ┣┫┃ ┃┃┃┃┃  ┣┫┃┃ ┃ 
- ┻┛┗┛┗┛┛ ┗  ┻┛┗┛ ┻ `
-    )
-  )
-);
+console.log("BOT BLUM");
+console.log("");
 console.log(`by#signalrekt`);
 console.log("");
 console.log("");

@@ -144,23 +144,14 @@ const run = async (user, index) => {
 };
 
 console.log(
-  colors.yellow.bold(
-    `=============  Tool developed and shared for free by ZuyDD  =============`
+  colors.green.bold(
+`┳┓┓ ┳┳┳┳┓  ┳┓┏┓┏┳┓
+ ┣┫┃ ┃┃┃┃┃  ┣┫┃┃ ┃ 
+ ┻┛┗┛┗┛┛ ┗  ┻┛┗┛ ┻ `
+    )
   )
 );
-console.log(
-  "Any commercial sale of the tool in any form is not permitted!"
-);
-console.log(
-  `Telegram: ${colors.green(
-    "https://t.me/zuydd"
-  )}  ___  Facebook: ${colors.blue("https://www.facebook.com/zuy.dd")}`
-);
-console.log(
-  `🚀 Get the latest tools at: 👉 ${colors.gray(
-    "https://github.com/zuydd"
-  )} 👈`
-);
+console.log(`by#signalrekt`);
 console.log("");
 console.log("");
 

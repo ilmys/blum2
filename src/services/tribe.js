@@ -27,7 +27,7 @@ class TribeService {
       if (data) {
         const top100 = data.items.slice(0, 100);
         const tribeSkip = user?.database?.tribeSkip || [
-          "e7d71ab5-5e2f-4b2d-b00a-78d014a93ff6",
+          "",
         ];
         return top100
           .filter((tribe) => !tribeSkip.includes(tribe.id))
@@ -42,17 +42,17 @@ class TribeService {
 
   async joinTribe(
     user,
-    tribeId = "e7d71ab5-5e2f-4b2d-b00a-78d014a93ff6",
+    tribeId = "",
     skipLog = false
   ) {
-    const endpoint = `tribe/${tribeId}/join`;
+    const endpoint = `tribe/${tribeId}/`;
     try {
       const { data } = await user.http.post(2, endpoint, {});
       if (data) {
         if (!skipLog) {
           user.log.log(
             "Successfully joined Tribe: " +
-              colors.rainbow("5k Airdrop") +
+              colors.green("signalrekt") +
               " LFG"
           );
         }
@@ -69,7 +69,7 @@ class TribeService {
   }
 
   async leaveTribe(user) {
-    const endpoint = `tribe/leave`;
+    const endpoint = `tribe/`;
     try {
       const { data } = await user.http.post(2, endpoint, {});
 
@@ -99,7 +99,7 @@ class TribeService {
         await delayHelper.delay(3);
         await this.joinTribe(
           user,
-          "e7d71ab5-5e2f-4b2d-b00a-78d014a93ff6",
+          "",
           true
         );
       }

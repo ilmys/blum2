@@ -149,9 +149,6 @@ console.log(`by#signalrekt`);
 console.log("");
 console.log("");
 
-server.checkVersion(VERSION);
-server.showNoti();
-console.log("");
 const users = await userService.loadUser();
 
 for (const [index, user] of users.entries()) {

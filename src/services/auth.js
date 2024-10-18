@@ -62,7 +62,7 @@ class AuthService {
 
   async handleLogin(user) {
     console.log(
-      `============== Running account ${user.index} | ${user.info.fullName.green} ==============`
+      `account ${user.index} | ${user.info.fullName.green} `
     );
 
     let info = null;
@@ -90,7 +90,7 @@ class AuthService {
       };
     }
     user.log.logError(
-      "Login process failed, please check your account information (you may need to retrieve a new query_id). The system will attempt to log in again after 60s"
+      "Login process failed, ganti query "
     );
     return {
       status: 0,

@@ -143,7 +143,7 @@ const run = async (user, index) => {
   }
 };
 
-console.log("BOT BLUM");
+console.log(`BOT BLUM`);
 console.log("");
 console.log(`by#signalrekt`);
 console.log("");
